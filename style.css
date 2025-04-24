@@ -1,0 +1,36 @@
+.container{
+    background-color: white ;
+    position : absolute;
+    top 50 %
+    left : 50%
+    transform : translate (-50% ; 50 %)
+    padding : 10px;
+    border-radius: 5 px;
+    width : auto;
+    text align : center ;
+}
+label{
+display: block
+margin-bottom: 10 px;
+}
+input [type="number"]{
+    margin-bottom: 10 px;
+    width: 350 px;
+    height : 20 px;
+    padding : 8 px;
+}
+button { 
+    padding 10 px 20 px;
+    border : none ;
+    outline : none ;
+    background-color: blueviolet;
+    color: white;
+    transition : .2s ease-in-out;
+    cursor : pointer;
+}
+ button:hover{
+    background-color : rgb(93, 19, 163)
+ }
+#passwordOutput{
+    
+}
