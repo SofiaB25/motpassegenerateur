@@ -1,36 +1,81 @@
-.container{
-    background-color: white ;
-    position : absolute;
-    top 50 %
-    left : 50%
-    transform : translate (-50% ; 50 %)
-    padding : 10px;
-    border-radius: 5 px;
-    width : auto;
-    text align : center ;
+*{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
-label{
-display: block
-margin-bottom: 10 px;
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100 vh;
+    background :url(imagemdps.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-input [type="number"]{
-    margin-bottom: 10 px;
-    width: 350 px;
-    height : 20 px;
-    padding : 8 px;
+
+.container {
+    max-width:  600px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    padding: 30px;
+    border: radius 20px;
+    box-shadow: 0 0 10px white;
+    text-align: center;
+} 
+
+
+
+h2{
+    margin-bottom: 100px;
+    color: white
+ 
+  }
+
+
+  
+
+ input {
+    width:100px;
+    letter-spacing: 3px;
+    padding : 20px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+    outline: 0
+    border: 1px solid #ccc;
 }
+
+/* .buttons{
+    padding: 10px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+} */
+
 button { 
-    padding 10 px 20 px;
-    border : none ;
-    outline : none ;
+    text-transform: capitalize;
+    padding : 10px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    color:antiquewhite;
     background-color: blueviolet;
-    color: white;
-    transition : .2s ease-in-out;
-    cursor : pointer;
+    width: 70%
+    color: #6c757d;
+    background-color: transparent;
+    width: 70px;
+    border: 1px solid #6c757d;
 }
+
+
  button:hover{
     background-color : rgb(93, 19, 163)
  }
+
 #passwordOutput{
-    
+    font-size: 24 px;
+    font-weight: 600;
 }
