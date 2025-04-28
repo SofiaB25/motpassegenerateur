@@ -1,81 +1,93 @@
-*{
-    box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height:100 vh;
-    background :url(imagemdps.jpg);
+    min-height: 100vh;
+    background: url(imagemdps.jpg);
     background-size: cover;
-    background-position:center center;
+    background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    color: green;
+    font-size: larger;
 }
 
-.container {
-    max-width:  600px;
-    margin: auto;
-    margin-top: 200px;
-    margin-bottom: 40px;
-    padding: 30px;
-    border: radius 20px;
-    box-shadow: 0 0 10px white;
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 450px;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-between; 
+    height: auto; 
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
     text-align: center;
-} 
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px; 
+    letter-spacing: 1px;
+}
 
+.passwordBox {
+    padding: 0 10px;
+    margin-bottom: 20px;
+    width: 98%;
+    font-size: bold;
+}
 
-
-h2{
-    margin-bottom: 100px;
-    color: white
- 
-  }
-
-
-  
-
- input {
-    width:100px;
+input {
+    width: 85%; 
+    height: 50px;
+    height: 75px;
     letter-spacing: 3px;
-    padding : 20px;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 17px;
     text-align: center;
     font-weight: 400;
-    outline: 0
-    border: 1px solid #ccc;
+    outline: 0;
+    border: 3px solid green;
+    border-radius: 5px;
+    color: blue;
 }
 
-/* .buttons{
+.buttons {
     padding: 10px;
-    width:100%;
-    display:flex;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-} */
-
-button { 
-    text-transform: capitalize;
-    padding : 10px;
-    border:none;
-    outline:none;
-    cursor:pointer;
-    color:antiquewhite;
-    background-color: blueviolet;
-    width: 70%
-    color: #6c757d;
-    background-color: transparent;
-    width: 70px;
-    border: 1px solid #6c757d;
 }
 
+button {
+    text-transform: capitalize;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
- button:hover{
-    background-color : rgb(93, 19, 163)
- }
+button:first-child {
+    color: #fff;
+    background-color: #5372f0;
+    width: 69%;
+}
 
-#passwordOutput{
-    font-size: 24 px;
-    font-weight: 600;
+button:last-child {
+    color: #fff;
+    background-color: rgb(19, 149, 163);
+    width: 28%;
+    border: 1px solid #fff;
+}
+
+button:hover {
+    background-color: green;
 }
